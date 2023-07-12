@@ -88,8 +88,11 @@
   status: fail 
 
     - summary: |
- Проверка функционирования кнопки "Hexlet Store" 
+ Проверка пагинации веб-сайта  
   status: fail 
+
+
+ 
 
 
 

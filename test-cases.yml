@@ -1,16 +1,16 @@
 ---
 - summary: |
    Проверка отображения дополнительной информации на на карточки товара 
-  requirement: | 
+requirement: | 
    Пользователь должен иметь возможность просматривать подробную информацию о товаре
-  prerequisites: |
+prerequisites: |
    Открыта страница интернет магазина
-  test-data: |
+test-data: |
    https://hexlet-products-store.vercel.app/
-  steps: 
+steps: 
    - Открыть главную страницу сайта 
    - Нажать на карточку товара
-   expected-result: |
+expected-result: |
     Пользователю отобразиться дополнительная информация о товаре: цена, описание и фотографии товара 
     
 - summary: |
@@ -326,26 +326,17 @@
 
 - summary: |
    Проверка функционирования кнопки "Hexlet Store" 
-  requirement: | 
+requirement: | 
    При нажатит на кнопку "Hexlet Store" в шапке веб-сайта, она должна редиректить на «Главную страницу» сайта    
-  prerequisites: |
+prerequisites: |
    Открыта страница интернет магазина
-  test-data: |
+test-data: |
    https://hexlet-products-store.vercel.app/
   steps: 
    - Нажать на кнопку "Корзина" вверхнем правом углу
    - Нажать на кнопку "Hexlet Store" в шапке веб-сайта
-   expected-result: |
+expected-result: |
     Осуществляется переход на главную страницу сайта 
 
 
     
-    
-    
-
-     
-   
-   
-
-     
-     

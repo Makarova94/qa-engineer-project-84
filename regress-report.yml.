@@ -87,9 +87,6 @@ test-cases:
     Проверка отображения всех изображений на веб-сайте
   status: pass 
 
-    - summary: |
- Проверка пагинации по страницам 
-  status: pass
 
 
 bugreports:

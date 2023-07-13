@@ -1,147 +1,147 @@
 ---
 - summary: |
    Проверка отображения дополнительной информации на карточки товара 
-requirement: | 
+  requirement: | 
    Пользователь должен иметь возможность просматривать подробную информацию о товаре
-prerequisites: |
+  prerequisites: |
    Открыта страница интернет магазина
-test-data: |
+  test-data: |
    https://hexlet-products-store.vercel.app/
-steps: 
+  steps: 
    - Открыть главную страницу сайта 
    - Нажать на карточку товара
-expected-result: |
+  expected-result: |
     Пользователю отобразиться дополнительная информация о товаре: цена, описание и фотографии товара 
     
 - summary: |
    Проверка пагинации по страницам 
-requirement: | 
+  requirement: | 
    Пользователь должен иметь возможность просматривать товары. 
    На первой странице можно только перейти на "Следующую" страницу
-prerequisites: |
+  prerequisites: |
    Открыта страница интернет магазина
-test-data: |
+  test-data: |
    https://hexlet-products-store.vercel.app/
-steps: 
+  steps: 
    - Открыть главную страницу сайта 
    - Нажимаем на кнопку "Следующая" 
-expected-result: |
+  expected-result: |
     С первой страницы сайта можно перейти только на "Следующую". 
     Произошел переход на следующую страницу каталога
     
 - summary: |
    Добавление товара в корзину  
-requirement: | 
+  requirement: | 
    Пользователь должен иметь возможность добавлять товар в корзину
-prerequisites: |
+  prerequisites: |
    Корзина пустая
-test-data: |
+  test-data: |
    https://hexlet-products-store.vercel.app/
-steps: 
+  steps: 
    - Открыть главную страницу сайта 
    - Нажать на кнопку "В корзину" на случайном товаре из каталога
    - Нажать на кнопку "Корзина" в правом верхнем углу
-expected-result: |
+  expected-result: |
      Выводится добавленный товар на шаге 1: название, цена. Выводится общая сумма добавленных товаров.
   
 - summary: |
    Добавление нескольких товаров в корзину  
-requirement: | 
+  requirement: | 
    Пользователь должен иметь возможность добавлять несколько товаров в корзину
-prerequisites: |
+  prerequisites: |
    Корзина пустая
-test-data: |
+  test-data: |
    https://hexlet-products-store.vercel.app/
-steps: 
+  steps: 
    - Открыть главную страницу сайта 
    - Нажать кнопку "В корзину" на случайном товаре из каталога
    - Нажать кнопку "В корзину" на любом другом товаре из каталога
    - Нажать кнопку "Корзина" в правом верхнем углу
-expected-result: |
+  expected-result: |
      Выводятся добавленные товары на шагах 1 и 2: название, цена. Выводится количество для каждого товара. Выводится общая сумма добавленных товаров.
      
 - summary: |
    Проверка фильтрации по ключевому слову  
-requirement: | 
+  requirement: | 
    Пользователь должен иметь возможность осуществлять фильтрацию товаров в катологе по ключевому слову 
-prerequisites: |
+  prerequisites: |
    Открыта страница интернет магазина
-test-data: |
+  test-data: |
    https://hexlet-products-store.vercel.app/
-steps: 
+  steps: 
    - Открыть главную страницу сайта 
    - Ввести в форме "Поиск" слово "Shoes"
    - Нажать на кнопку Enter
-expected-result: |
+  expected-result: |
      Отображается список товаров согласно введенному запросу
     
 - summary: |
    Проверка фильтра по цене 
-requirement: | 
+  requirement: | 
    Пользователь должен иметь возможность осуществлять фильтрацию товаров в катологе по цене
-prerequisites: |
+  prerequisites: |
    Открыта страница интернет магазина
-test-data: |
+  test-data: |
    https://hexlet-products-store.vercel.app/
-steps: 
+  steps: 
    - Открыть главную страницу сайта 
    - Выставляем диапозон с 40 по 1000
-expected-result: |
+  expected-result: |
      Отображается список товаров согласно введенному диапозону цены
 
 - summary: |
    Проверка адаптации к мобильной версии 
-requirement: | 
+  requirement: | 
    Пользователь должен иметь доступ к сайту через мобильную версию
-prerequisites: |
+  prerequisites: |
    Открыта страница интернет магазина
-test-data: |
+  test-data: |
    https://hexlet-products-store.vercel.app/
-steps: 
+  steps: 
    - Открыть главную страницу сайта 
    - Зайти в DevTools
    - Переключиться на мобильную версию 
    - Выбрать из списка Iphone 12 PRO
-expected-result: |
+  expected-result: |
      На мобильных устройствах каталог сохраняет функционал и верстку 
 
 - summary: |
    Проверка фильтра по наличию товара 
-requirement: | 
+  requirement: | 
    Пользователю должны отображаться товары, которые находятся в наличии 
-prerequisites: |
+  prerequisites: |
    Открыта страница интернет магазина
-test-data: |
+  test-data: |
    https://hexlet-products-store.vercel.app/
-steps: 
+  steps: 
    - Открыть главную страницу сайта 
    - Поствить галочку в графе "В наличии"
-expected-result: |
+  expected-result: |
      Отображаются товары, которые находятся в наличии
 
 - summary: |
    Проверка счетчика количества товаров в корзине
-requirement: | 
+  requirement: | 
    Счетчик должен отображать количество товаров в корзине 
-prerequisites: |
+  prerequisites: |
    Открыта страница интернет магазина
-test-data: |
+  test-data: |
    https://hexlet-products-store.vercel.app/
-steps: 
+  steps: 
    - Открыть главную страницу сайта 
    - Добавить 3 товара в корзину нажав кнопку "В корзину"
-expected-result: |
+  expected-result: |
     Счетчик количества товаров в корзине должен отображать цифру "3"
     
 - summary: |
    Проверка корректности цены при добавлении товара в корзину  
-requirement: | 
+  requirement: | 
    Цена товара не должна меняться при добавлении корзину
-prerequisites: |
+  prerequisites: |
    Открыта страница интернет магазина
-test-data: |
+  test-data: |
    https://hexlet-products-store.vercel.app/
-steps: 
+  steps: 
    - Открыть главную страницу сайта 
    - Добавить товар в корзину нажав кнопку "В корзину"
    - Перейти в корзину нажав на кнопку "Корзина" в верхнем правом углу 
@@ -150,192 +150,192 @@ expected-result: |
 
 - summary: |
    Проверка корректности цены при добавлении нескольких товаров   
-requirement: | 
+  requirement: | 
    Цена товаров должна верно суммироваться при добавлении нескольких товаров в корзину 
-prerequisites: |
+  prerequisites: |
    Открыта страница интернет магазина
-test-data: |
+  test-data: |
    https://hexlet-products-store.vercel.app/
-steps: 
+  steps: 
    - Открыть главную страницу сайта 
    - Добавить 2 товара в корзину нажав кнопку "В корзину"
    - Перейти в корзину нажав на кнопку "Корзина" в верхнем правом углу 
-expected-result: |
+  expected-result: |
     При добавлении нескольких товаров в корзину, верно указывается их суммма 
     
 - summary: |
    Проверка изменения содержания корзины после    
-requirement: | 
+  requirement: | 
    После удаления товара из корзины, он больше не отображается
-prerequisites: |
+  prerequisites: |
    Открыта страница интернет магазина
-test-data: |
+  test-data: |
    https://hexlet-products-store.vercel.app/
-steps: 
+  steps: 
    - Открыть главную страницу сайта
    - Добавить товар в корзину нажав кнопку "В корзину"
    - Перейти в корзину нажав на кнопку "Корзина" в верхнем правом углу
    - Удалить товар
-expected-result: |
+  expected-result: |
     Удаленный товар не отображается в корзине  
 
 - summary: |
    Проверка оформления заказа   
-requirement: | 
+  requirement: | 
    При заказе товара, должно корректно проходить оформление заказа 
-prerequisites: |
+  prerequisites: |
    Открыта страница интернет магазина
-test-data: |
+  test-data: |
    https://hexlet-products-store.vercel.app/
-steps: 
+  steps: 
    - Открыть главную страницу сайта 
    - Добавить 2 товара в корзину нажав кнопку "В корзину"
    - Перейти в корзину нажав на кнопку "Корзина" в верхнем правом углу 
    - Нажать на кнопку "Оформить заказ"
-expected-result: |
+  expected-result: |
     Появляется сплывающее окно с информацией об успешном оформлении заказа с указанием товара и общей суммой
 
 - summary: |
    Проверка кроссбраузерности интернет-магазина   
-requirement: | 
+  requirement: | 
    корректное отображение сайта на предмет функциональности всех элементов, качественного отображения и единого дизайна, во всех актуальных версиях браузеров (Chrome, Firefox, Opera)
-prerequisites: |
+  prerequisites: |
    Открыта страница интернет магазина
-test-data: |
+  test-data: |
    https://hexlet-products-store.vercel.app/
-steps: 
+  steps: 
    - Открыть главную страницу сайта в браузерах (Chrome, Firefox, Opera)
    - Проверить корректность отображения сайта
-expected-result: |
+  expected-result: |
     Сайт корректно отображается и функционирует во всех актуальных версиях браузеров (Chrome, Firefox, Opera)
 
 - summary: |
    Фильтрация товаров по производителю 
-requirement: | 
+  requirement: | 
    Пользователь должен иметь возможность осуществлять фильтрацию товаров в катологе по выбору производителя  
-prerequisites: |
+  prerequisites: |
    Открыта страница интернет магазина
-test-data: |
+  test-data: |
    https://hexlet-products-store.vercel.app/
-steps: 
+  steps: 
    - Открыть главную страницу сайта
    - Выбрать производителя "Iphone"
-expected-result: |
+  expected-result: |
      Отображается список товаров согласно выбранному производителю
 
 - summary: |
    Проверка скорости загрузки веб-сайта 
-requirement: | 
+  requirement: | 
    Веб-сайт должен загружаться при разной скороти интернета   
-prerequisites: |
+  prerequisites: |
    Открыта страница интернет магазина
-test-data: |
+  test-data: |
    https://hexlet-products-store.vercel.app/
-steps: 
+  steps: 
    - Открыть главную страницу сайта
    - Зайти в DevTools
    - Нажать на вкладку "Network"
    - поменять скорость интерент соединения на "Slow 3G"
-expected-result: |
+  expected-result: |
      Веб-сайт корректно прогружается 
 
 - summary: |
    Проверка HTTPS сертификата  
-requirement: | 
+  requirement: | 
    HTTPS сертификат должен быть действительным   
-prerequisites: |
+  prerequisites: |
    Открыта страница интернет магазина
-test-data: |
+  test-data: |
    https://hexlet-products-store.vercel.app/
-steps: 
+  steps: 
    - Открыть главную страницу сайта
    - Нажать на знак замка в адресной строке 
    - Перейти на вкладку "Безопасное соединение и действительный сертификат"
-expected-result: |
-     HTTPS сертификат действующий 
+   expected-result: |
+    HTTPS сертификат действующий 
 
 - summary: |
    Проверка работоспособности веб-сайта с большим трафиком   
-requirement: | 
+  requirement: | 
    Веб-сайт должен правильно функционировать при большом трафике   
-prerequisites: |
+  prerequisites: |
    Открыта страница интернет магазина
-test-data: |
+  test-data: |
    https://hexlet-products-store.vercel.app/
-steps: 
+  steps: 
    - С помощью сервиса Pingdom проверить производительность веб-сайта (100 пользователей в минуту)
-expected-result: |
+  expected-result: |
     Веб-сайт корректно отрабатывает при нагрузки 100 пользователей в минуту
 
 - summary: |
    Проверка мультиязычности на веб-сайте    
-requirement: | 
+  requirement: | 
    При смене языка не должна меняться структура веб-сайта   
-prerequisites: |
+  prerequisites: |
    Открыта страница интернет магазина
-test-data: |
+  test-data: |
    https://hexlet-products-store.vercel.app/
-steps: 
+  steps: 
    - Открыть главную страницу сайта
    - Поменять язык на русский с помощью кнопки "Язык" расположенной вверхнем правом углу
    - проверить адаптивность веб-сайта при измененном языке
-expected-result: |
+  expected-result: |
     Веб-сайт корректно отображается 
 
 - summary: |
    Проверка отображения всех товаров в списке категорий 
-requirement: | 
+  requirement: | 
    В списке категорий должны отображаться все имеющиеся категории при переходе на другую страницу каталога   
-prerequisites: |
+  prerequisites: |
    Открыта страница интернет магазина
-test-data: |
+  test-data: |
    https://hexlet-products-store.vercel.app/
-steps: 
+  steps: 
    - Открыть главную страницу сайта
    - Сравнить список категорий на всех страницах каталога
-expected-result: |
+  expected-result: |
      В списке категорий отображаются все товары на всех страницах каталога
 
 - summary: |
    Проверка отображения всех производителей товаров на всех страницах каталога
-requirement: | 
+  requirement: | 
    В списке производителей товаров должны отображаться все производители при переходе на другую страницу каталога   
-prerequisites: |
+  prerequisites: |
    Открыта страница интернет магазина
-test-data: |
+  test-data: |
    https://hexlet-products-store.vercel.app/
-steps: 
+  steps: 
    - Открыть главную страницу сайта
    - Сравнить список производителей на всех страницах каталога
-expected-result: |
+  expected-result: |
      В списке производителей товаров отображаются все производители при переходе на другую страницу каталога
 
 - summary: |
    Проверка отображения всех изображений на веб-сайте
-requirement: | 
+  requirement: | 
    На веб-сайте должны отображаться и прогружаться все изображения    
-prerequisites: |
+  prerequisites: |
    Открыта страница интернет магазина
-test-data: |
+  test-data: |
    https://hexlet-products-store.vercel.app/
-steps: 
+  steps: 
    - Открыть главную страницу сайта
    - Проверить все изображения на прогрузку и отображение 
-expected-result: |
+  expected-result: |
      Отображаются и прогружаются все изображения на веб-сайте
 
 - summary: |
    Проверка функционирования кнопки "Hexlet Store" 
-requirement: | 
+  requirement: | 
    При нажатит на кнопку "Hexlet Store" в шапке веб-сайта, она должна редиректить на «Главную страницу» сайта    
-prerequisites: |
+  prerequisites: |
    Открыта страница интернет магазина
-test-data: |
+  test-data: |
    https://hexlet-products-store.vercel.app/
-steps: 
+  steps: 
    - Нажать на кнопку "Корзина" вверхнем правом углу
    - Нажать на кнопку "Hexlet Store" в шапке веб-сайта
-expected-result: |
+  expected-result: |
     Осуществляется переход на главную страницу сайта 
 
 
